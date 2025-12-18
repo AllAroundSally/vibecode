@@ -276,15 +276,22 @@
 
         .modal-close .focus-annotation {
             top: auto;
-            bottom: -38px;
-            left: 50%;
+            bottom: auto;
+            right: -140px;
+            left: auto;
+            transform: none;
         }
 
         .modal-close .focus-annotation::after {
             bottom: auto;
-            top: -6px;
-            border-top: none;
-            border-bottom: 6px solid #2d2259;
+            top: 50%;
+            left: -6px;
+            right: auto;
+            transform: translateY(-50%);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid #2d2259;
+            border-left: none;
         }
 
         /* Helper text */
