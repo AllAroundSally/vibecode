@@ -126,7 +126,6 @@ This example demonstrates proper alt text for informative images that convey mea
 | Image Type | Alt Text |
 |------------|----------|
 | Company logo | "PMI - Project Management Institute" |
-| Team photo | "Product design team at 2025 offsite in Denver" |
 | Certification badge | "PMP certification badge", "PMI-ACP certification badge", "CSM certification badge" |
 | Chart/graph | "Bar chart showing project completion rates by quarter: Q1 85%, Q2 92%, Q3 88%, Q4 95%" |
 
