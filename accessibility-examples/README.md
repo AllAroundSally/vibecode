@@ -50,3 +50,29 @@ The forms use PMI-inspired styling with:
 - Rounded buttons and form fields
 - Proper spacing and visual hierarchy
 - Responsive design principles
+
+## Dialog Focus Sequence Example
+
+This example demonstrates proper keyboard navigation order in a delete confirmation dialog.
+
+### File
+
+**dialog-focus-sequence.html**
+- Demonstrates correct focus order for keyboard navigation
+- Shows a modal dialog with delete confirmation
+- Focus sequence: Close button → Cancel button → Delete button (destructive action last)
+
+### Key Features
+
+- **Proper focus order**: Destructive actions (Delete) are placed last in the tab sequence for safety
+- **Destructive action styling**: Delete button is styled in red to indicate danger
+- **Focus management**: Tab key cycles through interactive elements in the correct order
+- **Focus trap**: Keyboard focus stays within the modal dialog
+- **Visual focus indicators**: Clear visual feedback shows which element has focus
+- **Focus annotations**: Purple labels show the focus order sequence (1, 2, 3)
+- ARIA attributes: `role="dialog"`, `aria-modal="true"`, `aria-labelledby`
+- Escape key support for closing the dialog
+
+### Key Insight
+
+**Place destructive actions last in focus order for safety.** This prevents users from accidentally triggering dangerous actions when navigating with a keyboard. The natural tab order should guide users from safe actions (close, cancel) to destructive actions (delete) last.
