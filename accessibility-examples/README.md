@@ -95,7 +95,6 @@ This example demonstrates proper alt text and ARIA labels for images and icons i
 | Company logo | "PMI - Project Management Institute" | `aria-label` on logo container |
 | Edit icon (functional) | "Edit user [Name]" | `aria-label` on button, icon marked `aria-hidden="true"` |
 | Delete icon (functional) | "Delete user [Name]" | `aria-label` on button, icon marked `aria-hidden="true"` |
-| Close icon (functional) | "Close dialog" | `aria-label` on button, icon marked `aria-hidden="true"` |
 | Decorative icons | Not announced | `aria-hidden="true"` on icon, parent element has accessible text |
 
 ### Key Features
