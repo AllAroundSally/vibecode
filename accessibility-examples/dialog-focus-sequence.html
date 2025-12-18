@@ -232,59 +232,9 @@
             box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.3);
         }
 
-        /* Focus indicator annotation (for presentation purposes) */
+        /* Focus indicator annotation (hidden) */
         .focus-annotation {
-            position: absolute;
-            left: -180px;
-            background-color: #3d2e7c;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .focus-annotation::after {
-            content: "";
-            position: absolute;
-            right: -6px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 0;
-            height: 0;
-            border-left: 6px solid #3d2e7c;
-            border-top: 6px solid transparent;
-            border-bottom: 6px solid transparent;
-        }
-
-        .modal-close:focus .focus-annotation,
-        .btn-cancel:focus .focus-annotation,
-        .btn-delete:focus .focus-annotation {
-            opacity: 1;
-        }
-
-        /* Position annotations above Cancel and Delete buttons */
-        .btn-cancel .focus-annotation,
-        .btn-delete .focus-annotation {
-            left: 50%;
-            top: -35px;
-            transform: translateX(-50%);
-        }
-
-        .btn-cancel .focus-annotation::after,
-        .btn-delete .focus-annotation::after {
-            left: 50%;
-            top: auto;
-            bottom: -6px;
-            right: auto;
-            transform: translateX(-50%);
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 6px solid #3d2e7c;
-            border-bottom: none;
+            display: none;
         }
 
         /* Helper text */
