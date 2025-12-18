@@ -76,3 +76,38 @@ This example demonstrates proper keyboard navigation order in a delete confirmat
 ### Key Insight
 
 **Place destructive actions last in focus order for safety.** This prevents users from accidentally triggering dangerous actions when navigating with a keyboard. The natural tab order should guide users from safe actions (close, cancel) to destructive actions (delete) last.
+
+## Image Descriptions Example
+
+This example demonstrates proper alt text and ARIA labels for images and icons in an admin dashboard.
+
+### File
+
+**image-descriptions.html**
+- Shows a PMI admin dashboard with various image types
+- Demonstrates proper text alternatives for different image contexts
+- Includes company logo, functional icons, and decorative icons
+
+### Image Types and Descriptions
+
+| Image Type | Text Description | Implementation |
+|------------|-----------------|----------------|
+| Company logo | "PMI - Project Management Institute" | `aria-label` on logo container |
+| Edit icon (functional) | "Edit user [Name]" | `aria-label` on button, icon marked `aria-hidden="true"` |
+| Delete icon (functional) | "Delete user [Name]" | `aria-label` on button, icon marked `aria-hidden="true"` |
+| Close icon (functional) | "Close dialog" | `aria-label` on button, icon marked `aria-hidden="true"` |
+| Decorative icons | Not announced | `aria-hidden="true"` on icon, parent element has accessible text |
+
+### Key Features
+
+- **Functional icons**: Have descriptive `aria-label` on the interactive element (button/link)
+- **Decorative icons**: Marked with `aria-hidden="true"` so screen readers skip them
+- **Context-specific descriptions**: Icons include context (e.g., "Edit user Sarah Johnson" not just "Edit")
+- **Logo accessibility**: Company logo announced with full name
+- **Dashboard cards**: Icon is decorative, card title provides the accessible name
+- **Consistent patterns**: Similar icons use similar description patterns
+
+### Key Insight
+
+**Icons need text alternatives only when they convey unique information.** When an icon is paired with visible text or when the parent element has an accessible name, mark the icon as decorative with `aria-hidden="true"`. For functional icon-only buttons, provide a descriptive `aria-label` that includes context.
+
