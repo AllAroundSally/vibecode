@@ -196,6 +196,7 @@
             border-radius: 24px;
             cursor: pointer;
             transition: all 0.2s;
+            position: relative;
         }
 
         .btn-cancel:hover {
@@ -219,6 +220,7 @@
             border-radius: 24px;
             cursor: pointer;
             transition: all 0.2s;
+            position: relative;
         }
 
         .btn-delete:hover {
@@ -262,6 +264,27 @@
         .btn-cancel:focus .focus-annotation,
         .btn-delete:focus .focus-annotation {
             opacity: 1;
+        }
+
+        /* Position annotations above Cancel and Delete buttons */
+        .btn-cancel .focus-annotation,
+        .btn-delete .focus-annotation {
+            left: 50%;
+            top: -35px;
+            transform: translateX(-50%);
+        }
+
+        .btn-cancel .focus-annotation::after,
+        .btn-delete .focus-annotation::after {
+            left: 50%;
+            top: auto;
+            bottom: -6px;
+            right: auto;
+            transform: translateX(-50%);
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 6px solid #3d2e7c;
+            border-bottom: none;
         }
 
         /* Helper text */
