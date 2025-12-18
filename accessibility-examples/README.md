@@ -111,3 +111,36 @@ This example demonstrates proper alt text and ARIA labels for images and icons i
 
 **Icons need text alternatives only when they convey unique information.** When an icon is paired with visible text or when the parent element has an accessible name, mark the icon as decorative with `aria-hidden="true"`. For functional icon-only buttons, provide a descriptive `aria-label` that includes context.
 
+## Informative Images Example
+
+This example demonstrates proper alt text for informative images that convey meaningful content.
+
+### File
+
+**informative-images.html**
+- Shows a project portfolio page with various informative images
+- Each image conveys important information that must be accessible
+- Demonstrates detailed, descriptive alt text
+
+### Image Types and Alt Text
+
+| Image Type | Alt Text |
+|------------|----------|
+| Company logo | "PMI - Project Management Institute" |
+| Team photo | "Product design team at 2025 offsite in Denver" |
+| Certification badge | "PMP certification badge", "PMI-ACP certification badge", "CSM certification badge" |
+| Chart/graph | "Bar chart showing project completion rates by quarter: Q1 85%, Q2 92%, Q3 88%, Q4 95%" |
+
+### Key Features
+
+- **Descriptive alt text**: Each image has meaningful description of what it shows
+- **Complete information**: Alt text includes all important data (like chart values)
+- **Context provided**: Images describe what, where, and when relevant
+- **Certification badges**: Each badge identified by certification type
+- **Data visualization**: Chart alt text includes all data points and labels
+
+### Key Insight
+
+**Informative images require descriptive alt text that conveys the same information as the image.** For charts and graphs, include the data in the alt text. For photos, describe what's in the image and provide relevant context. The alt text should allow someone who can't see the image to understand the same information.
+
+
